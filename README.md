@@ -204,7 +204,13 @@ https://github.com/JEONGWOO0705/basic_aspnet_2024/assets/84116251/3fea6bed-315c-
 ## 6일차 
 - HTML + CSS + Js 응용
     - 웹페이지 클로닝
-        - Codehal 슬라이더 애니메이션 웹페이지 튜토리얼 따라하기 
+        - Codehal 슬라이더 애니메이션 웹페이지 튜토리얼 따라하기
+     
+      
+
+
+https://github.com/JEONGWOO0705/basic_aspnet_2024/assets/84116251/e50d1d7f-c089-4ad2-a16b-a187070f3146
+
 
 
 - 개인 웹페이지 클로닝
