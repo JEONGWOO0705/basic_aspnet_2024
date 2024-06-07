@@ -225,23 +225,23 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "최고의 미용사!!";
+        content: "Food Fighter!!";
     }
     21%,
     40%{
-        content: "염색 천재!!";
+        content: "Sexy Guy!!";
     }
     41%,
     60%{
-        content: "펌의 대명사!!";
+        content: "Hot Guy!!";
     }
     61%,
     80%{
-        content: "커트 개잘함!!";
+        content: "Chicken Lover!!";
     }
     81%,
     100%{
-        content: "다운펌 천재!!";
+        content: "Cheeze Lover!!";
     }
 }
 
