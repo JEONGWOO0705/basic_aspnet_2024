@@ -215,9 +215,68 @@ https://github.com/JEONGWOO0705/basic_aspnet_2024/assets/84116251/e50d1d7f-c089-
 
 - 개인 웹페이지 클로닝
 
+## 9일차 
+- ASP.NET
+    - 1990년대 MS가 웹서버 기술로 ASP(Active Server Page)를 배포. like JSP(Java Server Page)
+    - ASP는 .NET으로 된 언어가 아닌, VBScript를 사용. 확장자(.asp)
+    - 개발이 무지 쉬워서 많이 사용
+    - 스파게티 코드 ! : HTML + CSS + javascript + VBsript 짬뽕으로 만든 웹페이지
+    - 유지보수 어렵고, 성능이 나쁘고...
+    - 2000년대 MS가 .NET Framework를 발표
+    - C#, VB.NET, C++.NET 등의 새로운 언어를 배포, 여기에 맞춰서 웹  서버기술을 다시 만듬 -> ASP.NET(.aspx)
+    - 가장 큰 장점은 윈폼 개발하는 것 처럼 웹개발을 할 수 있었음.
+    - 초창기에 스파게티 코드를 거의 그대로 사용, .. 성능 안좋음
+    - 2009년 ASP.NET MVC(Model View Controller 디자인 패턴) 공표, 성능은 좋아짐
+    - 하지만, 윈도우에서만 동작
+    - 2016년 모든 OS 플랫폼에서 동작할 수 있는 .NET Core를 재출시
+    - 거기에 웹 서버기술을 또 다시 만듦 -> ASP.NET Core
+
+- .NET Core(현재는 .NET 9.0, Core라는 이름은 사용안함)의 장점
+    - 빠르고 오픈소스
+    - 크로스 플랫폼, OS에 종속받지 않음
+    - 성능!
+
+- ASP.NET 종류
+    - **ASP.NET Core 웹 API - 데이터 포털, 네이버, 카카오, 영화API 사이트를 만드는 백엔드(프론트엔드가 없어서 화면이 없음)**
+    - **ASP.NET CORE 웹앱(MVC) - 가장 기본적인 프론트엔드(HTML, CSS, JS .html) + 백엔드(C# .aspx.cs) 웹개발**
+    - ~~ASP.NET Webforms - 2000년도 초반에 나오다가 사장된 웹사이트 개발 기술~~
+    - JS(Vue, Angular, React) 프론트엔드, ASP.NET Core 백엔드
+    - ASP.NET Core gRPC 서비스 - 고성능 원격 프로시저 호출 서비스
+    - Blazor : Js 프론트엔드를 따라서 C# 컴포넌트 기반으로 개발하는 웹 개발 방식 웹사이트 개발
+    - .NET Aspire - Blazor + Redis + 웹 API 백엔드
+
+- 참조 사이트
+    - https://github.com/dotnet
+    - https://mixedcode.com/
+    - https://github.com/gilbutITbook/006824
+    - https://learn.microsoft.com/ko-kr/aspnet/core/?view=aspnetcore-3.1
+
+- ASP.NET Core 웹앱(Model-View-Controller)
+    - 현재 기본적인 웹 개발의 가장 표준
+    - Java 계열도 Spring (Boot) MVC로 개발
 
 
+    - 프론트엔드가 예전에 스파게티코드가 무지 심했다면, 현재는 스파게티 코드가 최소화 되어 있음(Spring Boot, Python flask든 모두 동일)
+    - IIS Express Server - VS 에서 ASP.NET 웹사이트를 운영하는 개발용 웹서버
+    - index.* : 웹사이트 가장 대문되는 페이지 이름
+    - 파일 저장시 핫다시로드(HotReload) 체크
+    - @로 시작하는 C#구분. Tag helper, Html helper로 HTML 구문내에 C# 코드를 적어서 활용하는 방법 = Rajor 구문
+    - Action == HTML에서 form 태크 내 submt 버튼 클릭! / 관련 링크를 클릭, 윈앱에서 이벤트와 동일
+    - 액션이 발생한 이후 처리하는 매서드의 결과를 ActionResult
+    - 콘솔 서버로그 잘 확인할 것, 프로세스가 종료되면 웹사이트가 실행안됨
 
+- 데이터 베이스연동 방법
+    - DB first : 가장 전통적인 DB 연동방식, DB설계, DB 구축, C#과 연동
+    - Code first : 최근 트랜드가 되는 DB 연동방식. C# 엔티티 클래스 작성, DB연결 설정후 실행하면 DB에 테이블이 생성
 
+- Entity Framework(Core) 설치
+    - Microsoft.EntityFrameworkCore
+    - Microsoft.EntityFrameworkCore.Tools
+    - Microsoft.EntityFrameworkCore.SqlServer
 
-
+- Code first 구현순서
+    - EF 패키지 설치
+    - 엔티티 클래스 작성
+    - appsettings.json 에 DB 연결문자열 추가
+    - Data/ApplicationDbContext.cs  중간연결 클래스 생성
+    - Program.cs Services 내에 DbContext 종속성을 주입
