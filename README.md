@@ -217,7 +217,6 @@ https://github.com/JEONGWOO0705/basic_aspnet_2024/assets/84116251/e50d1d7f-c089-
 
 
 
-https://github.com/JEONGWOO0705/basic_aspnet_2024/assets/84116251/dfe149af-1718-4d65-9d62-b4862c38e112
 
 
 
