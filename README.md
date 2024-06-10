@@ -254,6 +254,10 @@ https://github.com/JEONGWOO0705/basic_aspnet_2024/assets/84116251/e50d1d7f-c089-
 - ASP.NET Core 웹앱(Model-View-Controller)
     - 현재 기본적인 웹 개발의 가장 표준
     - Java 계열도 Spring (Boot) MVC로 개발
+    - MVC 개념도
+
+        <img src="https://raw.githubusercontent.com/JEONGWOO0705/basic_aspnet_2024/main/image/an0002.png" width="730">
+
 
 
     - 프론트엔드가 예전에 스파게티코드가 무지 심했다면, 현재는 스파게티 코드가 최소화 되어 있음(Spring Boot, Python flask든 모두 동일)
@@ -280,3 +284,21 @@ https://github.com/JEONGWOO0705/basic_aspnet_2024/assets/84116251/e50d1d7f-c089-
     - appsettings.json 에 DB 연결문자열 추가
     - Data/ApplicationDbContext.cs  중간연결 클래스 생성
     - Program.cs Services 내에 DbContext 종속성을 주입
+    - NuGet 패키지 관리자 > 패키지 관리자 콘솔 실행
+        ```shell
+        PM> add-migration 마이그레이션 명
+
+        Build started....
+        Build succeeded.
+
+        PM> update-database
+        ...
+        Done.
+        ```
+
+## 9일차 (07.22)
+- ASP.NET Core MVC
+    - 필요 이론
+    - 연습
+    - 개인 포트폴리오 웹사이트 
+    - Bootstrap 테마 적용
